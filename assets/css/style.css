@@ -62,53 +62,63 @@ h1, h2, h3, h4, h5, h6 {
 
 .right-side-bar {
     width: 300px;
-    float: right;
-    top: 0;
-    bottom: 0;
-    background: #ffffff;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-}
-
-.right-side-bar .certificate-recipent, .about-course {
-    height: 87px;
-    width: 280px;
-    margin: 0px auto;
     background: white;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.466);
+    padding: 50px 0px;
 }
 
-.right-side-bar .certificate-recipent span.user-name {
+.right-side-bar .content {
+    margin: 0px 10px;
+    height: 100%;
+}
+
+.right-side-bar .content .user-name, .about-course {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.466);
+    height: 70px;
+    border-radius: 5px;
+}
+
+.right-side-bar .content .user-name .name{ 
     position: relative;
-    top: -25px;
-    left: 10px;
-    color: rgb(49, 47, 47);
+    top: -35px;
+    left: 20px;
 }
 
-.right-side-bar .about-course {
-    height: 380px !important;
+.right-side-bar .content .about-course {
+    height: auto;
 }
 
-.right-side-bar .about-course .course-image {
-    width: 107%;
+.right-side-bar .content .about-course .course-title, .issue-date , .issue-id{
+    color: purple;
+    text-align: center;
 }
 
-.right-side-bar .buttons {
+.right-side-bar .content .about-course .course-title {
+    border: 1px solid purple;
+    border-radius: 3px;
+}
+
+.right-side-bar .content .about-course .date, .id{
+    color: grey;
+}
+
+.right-side-bar .content .buttons{ 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.right-side-bar .buttons .btn {
-    width: 150px;
-    border: none;
-    outline: none;
-    background: #6034DC;
+.right-side-bar .content .buttons .btn{ 
+    width: 100px;
     color: white;
+    border: none;
+    background: rgb(111, 18, 177);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 0px 5px 1px grey;
 }
 
-.right-side-bar .buttons .btn i {
+.right-side-bar .content .buttons .btn i{ 
     float: left;
 }
 
