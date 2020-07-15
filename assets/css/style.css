@@ -4,6 +4,8 @@
 
 body {
     font-family: sans-serif;
+    margin: auto;
+    width: 1366px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,8 +23,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     width: 100%;
 
+    overflow: hidden;
+
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    .background-img {
+        overflow: scroll !important;
+    }
 }
 
 /*********************************************************
@@ -30,36 +40,18 @@ h1, h2, h3, h4, h5, h6 {
 *********************************************************/
 
 .certificate {
-    margin: 10px 30px 0px;
-    height: 557px;
-    width: 909px;
-    background: linear-gradient(90deg, #35b5ffdc 23.17%, #6034DCdc 130.33%);
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+    margin: 5px 30px 0px;
 }
 
-.certificate .left-pillar {
-    float: left;
-    height: 80%;
-    width: 95px;
-    background: #6034DC;
-}
-
-.certificate .certificate-content {
-    height: 100%;
-    width: 815px;
-    margin-left: 95px;
+.certificate .certificate-header {
+    position: fixed;
     text-align: center;
-}
-
-.certificate .certificate-content .signature-line {
-    height: 3px;
-    width: 200px;
-    background-color: white;
-}
-
-.certificate .certificate-content p.certificate-header {
     background: rgba(0, 0, 0, 0.521);
-    margin-top: 0;
+    color: white; 
+    top: 0;
+    left: 0;
+    right: 0px;
+    margin: 0;
     padding: 10px;
 }
 
@@ -69,12 +61,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .right-side-bar {
     width: 300px;
-    position: relative;
-    right: -75px;
-    top: -10px;
-    bottom: 0px;
+    float: right;
+    top: 0;
+    right: 0;
+    bottom: 0;
     background: #ffffff;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    z-index: 9;
 }
 
 .right-side-bar .certificate-recipent, .about-course {
